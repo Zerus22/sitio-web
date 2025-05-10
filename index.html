@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Jujutsu Kaisen - Examen</title>
+</head>
+
+
+<!-- Encabezado -->
+<h1 align= "center"> <font color= "Red">JUJUTSU KAISEN</h1></font>
+
+    
+<!-- Imagen principal -->
+<div align="center">
+<img src="https://c4.wallpaperflare.com/wallpaper/940/130/408/jujutsu-kaisen-sukuna-kugisaki-nobara-maki-zenin-mahito-jujutsu-kaisen-hd-wallpaper-preview.jpg">
+</div>
+
+<!-- Parrafo 1 -->
+<p align= "justify"><font color= "aqua"><font size=6> Jujutsu Kaisen, creado por Gege Akutami, nos lleva a la historia de Yuji Itadori, un estudiante que se convierte en el recipiente del poderoso Sukuna. Esta serie mezcla acción, elementos sobrenaturales y drama de una manera que te mantiene al borde de tu asiento. </p></font>
+
+
+<!-- Tabla de personajes -->
+<h2 align= "center"> <font color= "Yellow"> Personajes Principales</h2></font>
+
+<table border="1" cellpadding="5" cellspacing="0" width="80%" align="center">
+<tr bgcolor="#ffd700">
+<th>Nombre</th>
+<th>Habilidad</th>
+ <th>Rol</th>
+
+</tr>
+<tr>
+
+<td><b><font color= "Silver">Yuji Itadori</b></td></font>
+<td><font color= "Silver">Fuerza física sobrehumana</td></font>
+ <td><font color= "Silver">Protagonista</td></font>
+
+</tr>
+<tr>
+
+<td><b><font color= "Silver">Megumi Fushiguro</b></td></font>
+<td><font color= "Silver">Invocación de Shikigamis</td></font>
+<td><font color= "Silver">Hechicero</td></font>
+
+</tr>
+<tr>
+
+<td><b><font color= "Silver">Nobara Kugisaki</b></td></font>
+<td><font color= "Silver">Clavos y Martillo Malditos</td></font>
+<td><font color= "Silver">Hechicera</td></font>
+
+</tr>
+</table>
+
+
+<!-- Lista de maldiciones -->
+<h2 align= "right"><font color= "lime"><font size=6> Maldiciones de Nivel Especial </h2> </font>
+
+<p align= "justify"><p align= "right"><font color= "aqua"><font size=5>Sukuna (Rey de las Maldiciones) </p></font>
+<p align= "justify"><p align= "right"><font color= "aqua"><font size=5> Mahito </p></font>
+<p align= "justify"><p align= "right"><font color= "aqua"><font size=5>Jogo </p></font>
+
+
+<!-- Parrafo 2 -->
+
+<p style="width:80%; margin:0 auto; text-align:justify;"><font size=6> Jujutsu Kaisen no solo destaca por su emocionante trama y personajes carismáticos, sino también por su animación impresionante y su banda sonora épica. Cada episodio te sumerge en un mundo donde los hechiceros luchan contra maldiciones peligrosas, y la tensión y la acción están garantizadas. La química entre los personajes y sus desarrollo a lo largo de la serie hace que te encariñes con ellos y te mantenga pegado a la pantalla.</p></font>
+
+<br>
+ <br>
+<br>
+<!-- Imagen 2 -->
+<div align="center">
+<img src="https://c4.wallpaperflare.com/wallpaper/267/750/534/jujutsu-kaisen-anime-boys-hd-wallpaper-preview.jpg">
+</div>
+<br>
+<br>
+
+<!-- Parrafo 3 -->
+
+<p style="width:80%; margin:0 auto; text-align:justify;"><font size=6>Si eres fan del anime o simplemente buscas una serie que te deje sin aliento, Jujutsu Kaisen es una elección obligada. Unete a Yuji y sus amigos en su lucha contra las maldiciones y descubre por qué esta serie ha conquistado los corazones de tantos fans alrededor del mundo.
+A continuacion rellena algunas preguntas para saber si leeiste Jujutsu Kaisen. </p></font>
+
+
+<!-- Formulario -->
+<h2 style="color: white;">Preguntas</h2>
+<form onsubmit="mostrarRespuestas(event)" style="color: white;">
+<p>¿Cuál es el personaje principal?</p>
+<input type="radio" name="principal" value="Satoru Gojo"> Satoru Gojo<br>
+<input type="radio" name="principal" value="Itadori"> Itadori<br>
+
+<p>¿Quién es el Rey de las Maldiciones?</p>
+<input type="radio" name="rey" value="Sukuna"> Sukuna<br>
+<input type="radio" name="rey" value="Jogo"> Jogo<br>
+
+<p>¿Qué rol cumple Nobara en la Serie?</p>
+<input type="radio" name="rol" value="Hechicera"> Hechicera<br>
+<input type="radio" name="rol" value="Protagonista"> Protagonista<br>
+<br>
+<input type="submit" value="Enviar Respuestas" style="background: red; color: white; padding: 10px; border: none;">
+</form>
+
+<!-- Espacio para resultados con animación -->
+<div id="resultados" style="display: none;
+                          margin: 20px;
+                          padding: 20px;
+                          background: #1a1a1a;
+                          color: lime;
+                          border: 2px solid red;
+                          border-radius: 10px;
+                          animation: aparecer 0.5s ease-out;">
+</div>
+<script>
+function mostrarRespuestas(event) {
+event.preventDefault();
+
+// Capturar respuestas
+const principal = document.querySelector('input[name="principal"]:checked')?.value || "❌ No seleccionado";
+const rey = document.querySelector('input[name="rey"]:checked')?.value || "❌ No seleccionado";
+const rol = document.querySelector('input[name="rol"]:checked')?.value || "❌ No seleccionado";
+
+// Respuestas correctas
+const correctPrincipal = "Itadori";
+const correctRey = "Sukuna";
+const correctRol = "Hechicera";
+
+// Verificar si las respuestas son correctas
+const isPrincipalCorrect = principal === correctPrincipal;
+const isReyCorrect = rey === correctRey;
+const isRolCorrect = rol === correctRol;
+
+// Mostrar resultados con estilo
+const resultadosDiv = document.getElementById("resultados");
+resultadosDiv.style.display = "block";
+resultadosDiv.innerHTML = `
+<h3 style="color: cyan; text-shadow: 0 0 5px blue;">RESPUESTAS:</h3>
+<p>🎯 <b>Personaje principal:</b> ${principal} ${isPrincipalCorrect ? '✅' : '❌'}</p>
+<p>👑 <b>Rey de las Maldiciones:</b> ${rey} ${isReyCorrect ? '✅' : '❌'}</p>
+<p>⚡ <b>Rol de Nobara:</b> ${rol} ${isRolCorrect ? '✅' : '❌'}</p>
+<button onclick="reiniciar()" style="background: red; color: white; margin-top: 10px; padding: 5px 10px;">Volver a intentar</button>`;}
+function reiniciar() {document.getElementById("resultados").style.display = "none";
+document.querySelector('form').reset();}
+</script>
+<style>
+/* Fondo negro para toda la página */
+body {background-color: black;
+font-family: Arial, sans-serif;}
+
+/* Animación de aparición */
+@keyframes aparecer {from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }}
+</style>
+
+<!-- Enlaces externos -->
+<hr>
+<p align="center">
+<a href="https://jujutsukaisen.jp/" target="_blank">Sitio Oficial</a> | 
+<a href="#top">Volver arriba</a>
+</p>
+
+
+<!-- Fondo  -->
+<body background="https://i.imgur.com/T4Z3yYG.jpeg" >
+
+<p align= "right"><font color= "lime"><font size=5> Esta pagina web fue Relizada por David Ante </p></font>
+
+</body>
+</html>
